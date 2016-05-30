@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1509" minimumToolsVersion="Automatic">
+    <entity name="Diagnostic" syncable="YES">
+        <attribute name="pacient" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Pacient" syncable="YES"/>
+    <elements>
+        <element name="Pacient" positionX="-63" positionY="-18" width="128" height="45"/>
+        <element name="Diagnostic" positionX="-54" positionY="-9" width="128" height="60"/>
+    </elements>
+</model>
