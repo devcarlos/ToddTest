@@ -18,17 +18,45 @@ enum Gender:String{
 //Pacient Model Class
 class TDPatient: NSObject {
     
-    var name:String = ""
-    var migraines:Bool = false
-    var age:Int = 0
-    var gender:Gender = .None
-    var useDrugs:Bool = false
+    var name:String!
+    var migraines:Bool!
+    var age:Int!
+    var gender:Gender!
+    var useDrugs:Bool!
     
-    func create(name: String, migraines: Bool, age: Int, gender: Gender, drugs: Bool) {
+    override init() {
+        self.name = ""
+        self.migraines = false
+        self.age = 0
+        self.gender = .None
+        self.useDrugs = false
+    }
+    
+    init(name: String, migraines: Bool, age: Int, gender: Gender, drugs: Bool) {
         self.name = name
         self.migraines = migraines
         self.age = age
         self.gender = gender
         self.useDrugs = drugs
     }
+    
+    var diagnosis:Diagnosis {
+        get{
+            return TDDiagnostic.runTest(self)
+        }
+    }
+    
+    var diagnosisText:String! {
+        get{
+            let percentage:Int = self.diagnosis.rawValue
+            return "\(percentage)% Probability of Todd Syndrome"
+        }
+    }
+    
+    // check diagnostic
+    func runTest() -> Diagnosis {
+        
+        return TDDiagnostic.runTest(self)
+    }
+    
 }

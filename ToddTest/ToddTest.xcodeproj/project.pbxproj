@@ -17,6 +17,10 @@
 		13EC90851CFC9F07009D4B70 /* TDPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC90811CFC8CA1009D4B70 /* TDPatient.swift */; };
 		13EC90871CFCA170009D4B70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC90861CFCA170009D4B70 /* HomeViewController.swift */; };
 		13EC90891CFCA199009D4B70 /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC90881CFCA199009D4B70 /* PatientViewController.swift */; };
+		13EC908A1CFCBDBA009D4B70 /* TDPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC90811CFC8CA1009D4B70 /* TDPatient.swift */; };
+		13EC908B1CFCBDBD009D4B70 /* TDDiagnostic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC90831CFC8EB0009D4B70 /* TDDiagnostic.swift */; };
+		13EC908F1CFCC2F3009D4B70 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC908E1CFCC2F3009D4B70 /* APIManager.swift */; };
+		13EC90911CFCC7DF009D4B70 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC90901CFCC7DF009D4B70 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		13EC90831CFC8EB0009D4B70 /* TDDiagnostic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TDDiagnostic.swift; path = Classes/Models/TDDiagnostic.swift; sourceTree = "<group>"; };
 		13EC90861CFCA170009D4B70 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Classes/Controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		13EC90881CFCA199009D4B70 /* PatientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatientViewController.swift; path = Classes/Controllers/PatientViewController.swift; sourceTree = "<group>"; };
+		13EC908E1CFCC2F3009D4B70 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = Classes/Managers/APIManager.swift; sourceTree = "<group>"; };
+		13EC90901CFCC7DF009D4B70 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Classes/Managers/DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +91,7 @@
 		13EC90591CFC8B4F009D4B70 /* ToddTest */ = {
 			isa = PBXGroup;
 			children = (
-				13EC90801CFC8B9B009D4B70 /* Models */,
-				13EC907E1CFC8B81009D4B70 /* Views */,
-				13EC907F1CFC8B8F009D4B70 /* Controllers */,
+				13EC908C1CFCC2BB009D4B70 /* Classes */,
 				13EC907D1CFC8B78009D4B70 /* Support */,
 			);
 			path = ToddTest;
@@ -138,6 +142,26 @@
 				13EC90831CFC8EB0009D4B70 /* TDDiagnostic.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		13EC908C1CFCC2BB009D4B70 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				13EC908D1CFCC2C5009D4B70 /* Managers */,
+				13EC90801CFC8B9B009D4B70 /* Models */,
+				13EC907E1CFC8B81009D4B70 /* Views */,
+				13EC907F1CFC8B8F009D4B70 /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		13EC908D1CFCC2C5009D4B70 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				13EC908E1CFCC2F3009D4B70 /* APIManager.swift */,
+				13EC90901CFCC7DF009D4B70 /* DataManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,11 +266,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				13EC90871CFCA170009D4B70 /* HomeViewController.swift in Sources */,
+				13EC90911CFCC7DF009D4B70 /* DataManager.swift in Sources */,
 				13EC905B1CFC8B4F009D4B70 /* AppDelegate.swift in Sources */,
 				13EC90891CFCA199009D4B70 /* PatientViewController.swift in Sources */,
 				13EC90851CFC9F07009D4B70 /* TDPatient.swift in Sources */,
 				13EC90631CFC8B4F009D4B70 /* ToddTest.xcdatamodeld in Sources */,
 				13EC90841CFC8EB0009D4B70 /* TDDiagnostic.swift in Sources */,
+				13EC908F1CFCC2F3009D4B70 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13EC90731CFC8B4F009D4B70 /* ToddTestTests.swift in Sources */,
+				13EC908B1CFCBDBD009D4B70 /* TDDiagnostic.swift in Sources */,
+				13EC908A1CFCBDBA009D4B70 /* TDPatient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

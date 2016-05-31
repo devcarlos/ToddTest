@@ -20,26 +20,13 @@ enum Diagnosis:Int {
 //Diagnostic Model Class
 class TDDiagnostic: NSObject {
     
-    var pacient:TDPatient = TDPatient()
-    var diagnosis:Diagnosis = .NotLikely
-    
-    func runTest(pacient: TDPatient) -> Diagnosis {
-
-        //current pacient
-        self.pacient = pacient
-        
-        self.diagnosis = self.runTest(pacient)
-        
-        return self.diagnosis
-    }
-    
     class func runTest(pacient: TDPatient) -> Diagnosis {
         
         
         var factorsWeight = 0
         
         // Many patients with this disorder also have migraines
-        if pacient.migraines {
+        if (pacient.migraines == true) {
             factorsWeight++
         }
         
@@ -54,7 +41,7 @@ class TDDiagnostic: NSObject {
         }
         
         //  Usage of hallucinogenic drugs increases the probability
-        if pacient.useDrugs {
+        if pacient.useDrugs == true {
             factorsWeight++
         }
         
