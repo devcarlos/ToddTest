@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135FCFAA1CFF43A60094FE77 /* ToddTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FCFA91CFF43A60094FE77 /* ToddTestUITests.swift */; };
 		13EC905B1CFC8B4F009D4B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC905A1CFC8B4F009D4B70 /* AppDelegate.swift */; };
 		13EC90601CFC8B4F009D4B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EC905E1CFC8B4F009D4B70 /* Main.storyboard */; };
 		13EC90631CFC8B4F009D4B70 /* ToddTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13EC90611CFC8B4F009D4B70 /* ToddTest.xcdatamodeld */; };
@@ -24,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		135FCFAC1CFF43A60094FE77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EC904F1CFC8B4F009D4B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13EC90561CFC8B4F009D4B70;
+			remoteInfo = ToddTest;
+		};
 		13EC906F1CFC8B4F009D4B70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13EC904F1CFC8B4F009D4B70 /* Project object */;
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		135FCFA71CFF43A60094FE77 /* ToddTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToddTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		135FCFA91CFF43A60094FE77 /* ToddTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToddTestUITests.swift; sourceTree = "<group>"; };
+		135FCFAB1CFF43A60094FE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13EC90571CFC8B4F009D4B70 /* ToddTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EC905A1CFC8B4F009D4B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13EC905F1CFC8B4F009D4B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		135FCFA41CFF43A60094FE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13EC90541CFC8B4F009D4B70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,11 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135FCFA81CFF43A60094FE77 /* ToddTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				135FCFA91CFF43A60094FE77 /* ToddTestUITests.swift */,
+				135FCFAB1CFF43A60094FE77 /* Info.plist */,
+			);
+			path = ToddTestUITests;
+			sourceTree = "<group>";
+		};
 		13EC904E1CFC8B4F009D4B70 = {
 			isa = PBXGroup;
 			children = (
 				13EC90591CFC8B4F009D4B70 /* ToddTest */,
 				13EC90711CFC8B4F009D4B70 /* ToddTestTests */,
+				135FCFA81CFF43A60094FE77 /* ToddTestUITests */,
 				13EC90581CFC8B4F009D4B70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +112,7 @@
 			children = (
 				13EC90571CFC8B4F009D4B70 /* ToddTest.app */,
 				13EC906E1CFC8B4F009D4B70 /* ToddTestTests.xctest */,
+				135FCFA71CFF43A60094FE77 /* ToddTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +196,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		135FCFA61CFF43A60094FE77 /* ToddTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 135FCFB01CFF43A60094FE77 /* Build configuration list for PBXNativeTarget "ToddTestUITests" */;
+			buildPhases = (
+				135FCFA31CFF43A60094FE77 /* Sources */,
+				135FCFA41CFF43A60094FE77 /* Frameworks */,
+				135FCFA51CFF43A60094FE77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				135FCFAD1CFF43A60094FE77 /* PBXTargetDependency */,
+			);
+			name = ToddTestUITests;
+			productName = ToddTestUITests;
+			productReference = 135FCFA71CFF43A60094FE77 /* ToddTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		13EC90561CFC8B4F009D4B70 /* ToddTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13EC90771CFC8B4F009D4B70 /* Build configuration list for PBXNativeTarget "ToddTest" */;
@@ -212,6 +259,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Carlos Alcala";
 				TargetAttributes = {
+					135FCFA61CFF43A60094FE77 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 13EC90561CFC8B4F009D4B70;
+					};
 					13EC90561CFC8B4F009D4B70 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -236,11 +287,19 @@
 			targets = (
 				13EC90561CFC8B4F009D4B70 /* ToddTest */,
 				13EC906D1CFC8B4F009D4B70 /* ToddTestTests */,
+				135FCFA61CFF43A60094FE77 /* ToddTestUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		135FCFA51CFF43A60094FE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13EC90551CFC8B4F009D4B70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +320,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		135FCFA31CFF43A60094FE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135FCFAA1CFF43A60094FE77 /* ToddTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13EC90531CFC8B4F009D4B70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +356,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		135FCFAD1CFF43A60094FE77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13EC90561CFC8B4F009D4B70 /* ToddTest */;
+			targetProxy = 135FCFAC1CFF43A60094FE77 /* PBXContainerItemProxy */;
+		};
 		13EC90701CFC8B4F009D4B70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 13EC90561CFC8B4F009D4B70 /* ToddTest */;
@@ -316,6 +388,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		135FCFAE1CFF43A60094FE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToddTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurrentap.ToddTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ToddTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		135FCFAF1CFF43A60094FE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToddTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurrentap.ToddTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ToddTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		13EC90751CFC8B4F009D4B70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -448,6 +544,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		135FCFB01CFF43A60094FE77 /* Build configuration list for PBXNativeTarget "ToddTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135FCFAE1CFF43A60094FE77 /* Debug */,
+				135FCFAF1CFF43A60094FE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		13EC90521CFC8B4F009D4B70 /* Build configuration list for PBXProject "ToddTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -464,6 +568,7 @@
 				13EC90791CFC8B4F009D4B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13EC907A1CFC8B4F009D4B70 /* Build configuration list for PBXNativeTarget "ToddTestTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +577,7 @@
 				13EC907C1CFC8B4F009D4B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

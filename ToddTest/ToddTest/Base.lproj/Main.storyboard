@@ -189,7 +189,7 @@
                                     <constraint firstAttribute="height" constant="30" id="7fx-Gv-WyK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minimumValue="1" maximumValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="vek-uv-fki">
                                 <rect key="frame" x="323" y="199" width="94" height="29"/>
@@ -209,9 +209,11 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fxb-nu-tEu">
                                 <rect key="frame" x="265" y="249" width="51" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Switch1"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rcm-xl-vQi">
                                 <rect key="frame" x="265" y="290" width="51" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Switch2"/>
                             </switch>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0A-mL-Oid">
                                 <rect key="frame" x="0.0" y="340" width="600" height="216"/>
